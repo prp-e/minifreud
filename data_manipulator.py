@@ -8,4 +8,5 @@ val_file_name = 'val.txt'
 input_file = open(input_file_name, encoding='utf-8')
 input_content = input_file.read()
 
-print(input_content)
+vocab = set(input_content)
+print(vocab)
