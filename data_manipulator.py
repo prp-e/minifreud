@@ -20,6 +20,10 @@ train_file.close()
 
 print("Train file has been written successfully")
 
+val_file = open(val_file_name, 'w', encoding='utf-8')
+val_file.write(val_split)
+val_file.close()
 
+print("Validation file has been written successfully")
 
 print(f"All: {len(input_content)}, Train: {len(train_split)}, Val: {len(val_split)}, Vocab Size: {len(vocab)}")
