@@ -27,7 +27,7 @@ val_file.close()
 print("Validation file has been written successfully")
 
 vocab_file = open(vocab_file_name, 'w', encoding='utf-8')
-vocab_file.write(vocab)
+vocab_file.write(str(vocab))
 vocab_file.close()
 
 print("Vocabulary window is made successfully.")
