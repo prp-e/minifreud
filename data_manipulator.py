@@ -14,4 +14,12 @@ vocab = set(input_content)
 train_split = input_content[:split_index]
 val_split = input_content[split_index:]
 
+train_file = open(train_file_name, 'w', encoding='utf-8')
+train_file.write(train_split)
+train_file.close()
+
+print("Train file has been written successfully")
+
+
+
 print(f"All: {len(input_content)}, Train: {len(train_split)}, Val: {len(val_split)}, Vocab Size: {len(vocab)}")
