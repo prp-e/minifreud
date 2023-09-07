@@ -26,4 +26,10 @@ val_file.close()
 
 print("Validation file has been written successfully")
 
+vocab_file = open(vocab_file_name, 'w', encoding='utf-8')
+vocab_file.write(vocab)
+vocab_file.close()
+
+print("Vocabulary window is made successfully.")
+
 print(f"All: {len(input_content)}, Train: {len(train_split)}, Val: {len(val_split)}, Vocab Size: {len(vocab)}")
